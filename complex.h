@@ -24,7 +24,7 @@ class complex{
     float real,img;
 public:
     complex() : real(0), img(1) {}
-    explicit complex (float=0,float=0);
+    //explicit complex (float=0,float=0);
     float getReal() const;
     float getImg() const;
     void setReal(float real);
