@@ -21,10 +21,10 @@
 using namespace std;
 
 class complex{
-    float real=0,img=0;
+    float real,img;
 public:
     complex() : real(0), img(1) {}
-    explicit complex (float,float=1);
+    explicit complex (float=0,float=0);
     float getReal() const;
     float getImg() const;
     void setReal(float real);
