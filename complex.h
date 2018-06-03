@@ -24,7 +24,7 @@ class complex{
     float real,img;
 public:
     complex() : real(0), img(1) {}
-    //explicit complex (float=0,float=0);
+    complex (float,float);
     float getReal() const;
     float getImg() const;
     void setReal(float real);
@@ -37,6 +37,11 @@ public:
     inline friend ostream & operator << (ostream &out, const complex &c);
     inline friend istream & operator >> (istream &in,  complex &c);
 };
+
+complex::complex(float real, float img) {
+    complex::real=real;
+    complex::img=img;
+}
 
 float complex::getReal() const {
     return real;
